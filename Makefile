@@ -10,3 +10,5 @@ commit:
 	@-$(GIT) add .
 	@-$(GIT) commit -m "Update: $(shell date +%Y-%m-%d)"
 
+push: commit
+	@-$(GIT) push
